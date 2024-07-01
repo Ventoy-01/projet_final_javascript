@@ -1,0 +1,230 @@
+/* section */
+.section {
+    background: url(../images/equipe-principal.jpg) center center / cover;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.div-section {
+    margin: auto;
+    height: 800px;
+    padding-top: 15%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.div-section h1 {
+    font-size: 2.2rem;
+}
+
+.div-section p {
+    line-height: 1.7em;
+    opacity: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* grid */
+
+.section-1 p {
+    margin: 60px 0 0 90px;
+    font-size: 1.875rem;
+}
+
+.div-section-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10px 0 50px;
+    width: 95%;
+}
+
+.div-section-1 h3 {
+    padding-bottom: 10px;
+}
+
+.div-section-1 .image {
+    flex: 1;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 40px rgb(101, 121, 124);
+    max-width: 100%;
+    min-height: 350px;
+}
+
+.div-section-1 .image img {
+    max-width: 100%;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.div-section-1 .image:hover {
+    transform: scale(1.01);
+}
+
+/* text */
+.div-text {
+    font-size: 1.875rem;
+    text-align: center;
+    width: 100%;
+    background: #2f343c;
+    color: white;
+}
+
+.center-text {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.div-text p {
+    padding: 25px 15%;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .div-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .div-section p {
+        font-size: 1.875rem;
+        margin: 40px 10%;
+    }
+
+    .div-text p {
+        font-size: 1.5625rem;
+        padding: 20px 12%;
+    }
+
+    .section-1 p {
+        font-size: 1.75rem;
+        margin: 40px 0 0 50px;
+    }
+
+    .div-section-1 .image {
+        margin: 10px 20px 50px 0;
+        max-width: 98%;
+    }
+}
+
+/* Tablets and small desktops */
+@media (max-width: 1199px) {
+    .div-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .div-section p {
+        font-size: 1.75rem;
+        margin: 30px 10%;
+    }
+
+    .div-text p {
+        font-size: 1.5rem;
+        padding: 20px 10%;
+    }
+
+    .section-1 p {
+        font-size: 1.625rem;
+        margin: 30px 0 0 30px;
+    }
+
+    .div-section-1 .image {
+        margin: 10px 20px 40px 0;
+        max-width: 260px;
+    }
+}
+
+/* Large phones */
+@media (max-width: 992px) {
+    .div-section {
+        padding-top: 100px;
+        height: 800px;
+    }
+
+    .div-section h1 {
+        font-size: 2.25rem;
+    }
+
+    .div-section p {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        width: 90%;
+    }
+
+    .div-text p {
+        font-size: 1.25rem;
+        padding: 0;
+    }
+
+    .section-1 p {
+        font-size: 1.5rem;
+        margin: 20px 0 0 20px;
+    }
+
+    .div-section-1 {
+        margin: 0;
+    }
+
+    .div-section-1 .image {
+        margin: 10px 10px 30px 0;
+        max-width: 220px;
+        object-fit: cover;
+    }
+
+    .center-text {
+        width: auto;
+    }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+    .div-section {
+        padding-top: 80px;
+        height: 800px;
+        flex-direction: column;
+    }
+
+    .div-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .div-section p {
+        font-size: 1.125rem;
+        margin: 20px 5%;
+        width: 90%;
+    }
+
+    .div-text p {
+        font-size: 1rem;
+        padding: 10px 5%;
+    }
+
+    .section-1 p {
+        font-size: 1.25rem;
+        margin: 10px 0 0 10px;
+    }
+
+    .div-section-1 {
+        flex-direction: column;
+    }
+
+    .div-section-1 .image {
+        margin: 10px 30px;
+        max-width: 100%;
+        min-width: 300px;
+    }
+
+    .center-text {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

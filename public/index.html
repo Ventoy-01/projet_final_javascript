@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Meta données -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Préconnexion vers Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Lien vers les fonts Indie Flower & Nanum Myeongjo -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Myeongjo&display=swap"
+        rel="stylesheet" />
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="./styles/style-generale.css" />
+    <link rel="stylesheet" href="./styles/style-index.css" />
+    <!-- Media Query pour les écrans de petite taille -->
+    <link rel="stylesheet" media="only screen and (max-width:500px)" href="./styles/style-mobile.css" />
+    <!-- Script FontAwesome -->
+    <script src="https://kit.fontawesome.com/031a9e5271.js" crossorigin="anonymous"></script>
+    <!-- Titre du document -->
+    <title>Lendor | Accueil</title>
+</head>
+
+<body>
+    <!-- Section Header -->
+    <header>
+        <div id="entete">
+            <nav id="navigation">
+                <div id="logo"><a href="./index.html"><i class='fas fa-crown'></i>Lendor</a></div>
+                <ul id="liens">
+                    <li class="active"><a href="#"> Accueil</a></li>
+                    <li><a href="./templates/offre.html"> Nos offres</a></li>
+                    <li><a href="./templates/equipe.html"> Notre équipe</a></li>
+                    <li><a href="./templates/contact.html"> Contact</a></li>
+                </ul>
+                <div class="menu-button" onclick="menu();"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section 1: Introduction -->
+    <section class="section-1">
+        <div class="div-section-1">
+            <div class="center-text">
+                <h1>
+                    Un <span class="get-logo-color">immobilier</span> d'exception pour des clients d'exception
+                </h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+                    laudantium accusamus assumenda? Illum veritatis illo ex rerum fuga
+                    voluptas odit sit temporibus porro officia, nisi consectetur eligendi
+                    ea enim amet! Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Nihil cum ducimus iure qua
+                    m atque fugit, repudiandae minus numquam ad, doloremque consectetur temporibus
+                    corrupti souvent quo sapiente eius accusantium ab.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Dernières acquisitions -->
+    <section class="section-2">
+        <p class="acquisition">Nos dernières acquisitions</p>
+        <div class="div-section-2">
+            <div class="image image1-div-section-2">
+                <img src="./images/chambre1.jpg" alt="Image de l'appartement à Paris" />
+                <h3>Appartement - Paris 75007</h3>
+                <h3>11 chambres 450 m²</h3>
+                <div class="ligne"></div>
+                <h3>€3 900 000 - $4 200 000</h3>
+            </div>
+            <div class="image image2-div-section-2">
+                <img src="./images/building1.jpg" alt="Image de l'appartement à Paris" />
+                <h3>Appartement - Paris 75007</h3>
+                <h3>11 chambres 450 m²</h3>
+                <div class="ligne"></div>
+                <h3>€3 900 000 - $4 200 000</h3>
+            </div>
+            <div class="image image3-div-section-2">
+                <img src="./images/chambre2.jpg" alt="Image de l'appartement à Paris" />
+                <h3>Appartement - Paris 75007</h3>
+                <h3>11 chambres 450 m²</h3>
+                <div class="ligne"></div>
+                <h3>€3 900 000 - $4 200 000</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Équipe -->
+    <section class="section-3">
+        <div class="div-section-3">
+            <div class="image-div-section-3"></div>
+            <div class="text-div-section-3">
+                <div class="text-div-section-3-content">
+                    <h2>
+                        Une équipe de <span class="get-logo-color">professionnels</span> avec plus de 10 ans
+                        d'expérience
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Veritatis laudantium accusamus assumenda? Illum veritatis
+                        illo ex rerum fuga voluptas odit sit temporibus porro officia,
+                        nisi consectetur eligendi ea enim amet!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Témoignages -->
+    <section class="section-4">
+        <div class="div-section-4">
+            <p class="begin-comment">Écoutez ce que nos clients pensent de nous</p>
+            <div class="ligne-commentaire"></div>
+            <h2 id="comment-title"></h2>
+            <h3 id="suggestion">Votre commentaire va apparaitre ici</h3>
+            <div id="comment-list" class="commentaire">
+                <!-- Les commentaires seront insérés ici -->
+                <!-- <div class="commentaire1"> </div>
+                <div class="image-commentaire"> </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section pour ajouter un commentaire -->
+    <section class="faire-commentaire">
+        <div class="ligne-commentaire"></div>
+        <h1>Section Commentaires</h1>
+        <form id="comment-form" method="POST" action="/add-comment">
+            <label for="nom">Entrer votre Nom et Prénom</label>
+            <input type="text" name="nom" placeholder="Entrer votre Nom et Prénom" id="name-input" required>
+            <textarea placeholder="Entrer votre commentaire ici" id="comment-input" name="comment" rows="6" cols="45"
+                required></textarea> <br>
+            <button type="submit">Validé votre commentaire</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>© 2024 Jonas Clocin - Tous droits Réservés</h2>
+    </footer>
+
+    <!-- Inclusion du script JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

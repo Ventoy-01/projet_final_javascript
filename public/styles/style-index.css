@@ -1,0 +1,390 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0;
+}
+
+/* Section 1 */
+.section-1 {
+  background: url(../images/principal.jpg) center center / cover;
+  height: 1100px;
+  width: 100%;
+}
+
+.div-section-1 {
+  background: rgba(0, 0, 0, 0.5);
+  height: 1100px;
+  width: 100%;
+  overflow: auto;
+}
+
+.center-text {
+  width: 50%;
+  margin-left: 30%;
+}
+
+.div-section-1 h1 {
+  padding-top: 35%;
+  font-size: 3.125rem; /* 50px */
+  color: white;
+}
+
+.div-section-1 p {
+  margin-top: 20px;
+  font-size: 0.9375rem; /* 15px */
+  color: white;
+}
+
+/* Section 2 */
+.section-2 p {
+  margin: 60px 0 0 27px;
+  font-size: 1.5625rem; /* 25px */
+}
+
+.div-section-2 {
+  display: flex;
+  margin: 0 20px 0 100px;
+}
+
+.div-section-2 h3 {
+  padding-bottom: 20px;
+}
+
+.div-section-2 .image {
+  margin: 10px 40px 0 0;
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 40px rgb(72, 82, 84);
+  transition: transform 0.3s;
+}
+
+.div-section-2 .image img {
+  max-width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.div-section-2 .image:hover {
+  transform: scale(1.01);
+}
+
+/* Section 3 */
+.div-section-3 {
+  display: flex;
+  text-align: center;
+  height: 450px;
+  width: 100%;
+  margin: 60px 0 0;
+}
+
+.image-div-section-3 {
+  background: url(../images/equipe1.jpg) center center / cover;
+  height: 100%;
+  width: 100%;
+  min-height: 350px;
+}
+
+.text-div-section-3 {
+  background: #35414a;
+}
+
+.text-div-section-3-content {
+  transform: translate(0, 50%);
+  text-align: left;
+  color: white;
+  padding: 10px;
+  max-width: 1300px;
+}
+
+.text-div-section-3-content p {
+  margin-top: 20px;
+  font-size: 1.25rem; /* 20px */
+}
+
+.text-div-section-3-content h2 {
+  font-size: 1.875rem; /* 30px */
+}
+
+/* Section 4 */
+.section-4 {
+  font-size: 1.25rem; 
+  text-align: center;
+}
+
+.div-section-4 {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+.div-section-4 .begin-comment {
+  text-align: left;
+  padding: 10px 0 10px 8%;
+}
+
+.div-section-4 .commentaire p {
+  padding: 0 0 0 20px;
+}
+.div-section-4 #suggestion{
+  display: none;
+  padding-left: 38%;
+}
+
+.div-section-4 .commentaire {
+  box-sizing: border-box;
+  display: block;
+  background: #bcbdbd;
+  margin: 70px 10px 50px 22.5%;
+  height: auto;
+  padding: 20px 10px;
+  align-items: center;
+  text-align: center;
+  width: 55%;
+}
+
+.image-commentaire img {
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
+}
+
+
+.commentaire-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;  
+}
+.image-commentaire {
+  display: block;
+  align-items: center;
+  margin: 10px 20px 0 0;
+}
+.commentaire1 {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #9a9a9a;
+  border-radius: 5px;
+  background-color: #dedede;
+}
+
+      
+.image-commentaire h5, .image-commentaire h6 {
+  margin: 0;
+  padding-left: 20px;
+}  
+.image-commentaire img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+      
+.ligne-commentaire {
+  width: 95%;
+  height: 1px;
+  background-color: rgb(169, 161, 161);
+  margin: 15px 30px 20px;
+}
+
+.fa-quote-left, .fa-quote-right {
+  color: black;
+}
+
+/* Form Styles for comments */
+#name-input {
+  width: 80%;
+  max-width: 430px;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px auto 20px auto;
+  border: 2px solid rgb(16, 97, 97);
+  border-radius: 5px;
+  display: block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#name-input:focus {
+  outline: none;
+  border-color: rgb(12, 77, 77);
+  box-shadow: 0 0 8px rgba(16, 97, 97, 0.5);
+}
+#comment-form label{
+  font-size: 1.5rem;
+  /* margin: 20px 0; */
+}
+
+
+.faire-commentaire {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.faire-commentaire h1 {
+  margin: 20px 0;
+}
+
+#comment-input {
+  font-size: 1rem;
+  padding: 0 5px;
+  resize: none;
+  border: 3px solid rgb(16, 97, 97);
+}
+
+#comment-form button {
+  font-size: 1rem;
+  width: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .center-text {
+      width: 70%;
+      margin-left: 15%;
+  }
+
+  .div-section-1 h1 {
+      padding-top: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-1 {
+      height: auto;
+  }
+
+  .div-section-1 {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .center-text {
+      width: 80%;
+      margin-left: 10%;
+    }
+
+  .div-section-1 h1 {
+      padding-top: 20%;
+      font-size: 2.5rem; /* 40px */
+  }
+
+  .div-section-1 p {
+      font-size: 1.125rem; /* 18px */
+  }
+}
+
+.div-section-2 {
+  margin: 0 20px;
+}
+
+.div-section-2 .image {
+  margin: 10px 5px;
+}
+
+@media (max-width: 768px) {
+  .section-2 p {
+      margin: 40px 0 0 20px;
+      font-size: 1.5625rem; /* 25px */
+  }
+
+  .div-section-2 {
+      flex-direction: column;
+      margin: 0 20px;
+  }
+
+  .div-section-2 .image img {
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .div-section-1 h1 {
+      padding-top: 60px;
+  }
+
+  .div-section-1 p {
+      padding-bottom: 40px;
+  }
+
+  .div-section-3 {
+      flex-direction: column;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+  }
+
+  .ligne-commentaire {
+      width: 85%;
+  }
+
+  .text-div-section-3-content {
+      transform: translate(0, 0);
+      text-align: center;
+  }
+
+  .text-div-section-3-content h2 {
+    font-size: 1.875rem; /* 30px */
+  }
+}
+
+@media (max-width: 576px) {
+  .center-text {
+      width: 95%;
+      margin-left: 2.5%;
+    }
+    
+    /* Responsive Styles */
+      #name-input {
+          width: 95%;
+      }
+  .div-section-1 h1 {
+      padding-top: 60px;
+      font-size: 1.8rem;
+  }
+
+  .div-section-1 p {
+      padding-bottom: 40px;
+  }
+
+  .div-section-4 p {
+      padding: 10px 0 0 10px;
+  }
+
+  .div-section-4 .begin-comment {
+      padding-left: 30px;
+  }
+
+  .div-section-4 .commentaire {
+      flex-direction: column;
+      width: 90%;
+      transform: translate(0, 0);
+      margin: 20px auto;
+  }
+
+  .image-div-section-3 {
+      flex-direction: column;
+  }
+
+  .ligne-commentaire {
+      width: 80%;
+  }
+}
